@@ -9,9 +9,11 @@ import { HackerNewsAPIService } from '../hackernews-api.service';
   styleUrls: ['./stories.component.scss']
 })
 export class StoriesComponent implements OnInit {
-	items;
+  items;
 
-  constructor(private _hackerNewsAPIService: HackerNewsAPIService) {}
+  constructor(
+    private _hackerNewsAPIService: HackerNewsAPIService
+  ) {}
 
   ngOnInit() {
     this._hackerNewsAPIService
